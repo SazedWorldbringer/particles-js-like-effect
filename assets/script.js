@@ -27,4 +27,11 @@ class Particle {
     this.size = size;
     this.color = color;
   }
+  // method to draw individual particle
+  draw() {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+    ctx.fillStyle = "#8c5523";
+    ctx.fill();
+  }
 }
