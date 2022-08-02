@@ -62,7 +62,9 @@ class Particle {
         this.y -= 10;
       }
     }
+    // move particle
     this.x += this.directionX;
     this.y += this.directionY;
+    // draw particle
   }
 }
