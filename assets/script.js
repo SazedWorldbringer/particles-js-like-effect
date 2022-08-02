@@ -34,4 +34,15 @@ class Particle {
     ctx.fillStyle = "#8c5523";
     ctx.fill();
   }
+  // check particle position, check mouse position,
+  // move the particle, draw the particle
+  update() {
+    // check if particle is still within canvas
+    if (this.x > canvas.width || this.x < 0) {
+      this.directionX = -this.directionX;
+    }
+    if (this.y > canvas.height || this.y < 0) {
+      this.directionY = -this.directionY;
+    }
+  }
 }
